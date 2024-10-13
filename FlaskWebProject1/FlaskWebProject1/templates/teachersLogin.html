@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container">
+    <form>
+        <div class="icon">
+            <i class="fa-solid fa-user"></i>
+        </div>
+
+        <div class="input-tab">
+            <label>Teachers ID</label>
+            <input type="text">
+        </div>
+
+        <div class="input-tab">
+            <label>Password</label>
+            <input type="password">
+        </div>
+
+        <div class="btn">
+            <button type="button" id="login-btn" onclick="window.location.href='{{ url_for('teachersLogin') }}'">Log in</button>
+        </div>
+    </form>
+</div>
+{% endblock %}
