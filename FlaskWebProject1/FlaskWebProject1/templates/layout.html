@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="/static/content/site.css" />
     <link rel="stylesheet" type="text/css" href="/static/content/HomePage.css" />
     <link rel="stylesheet" type="text/css" href="/static/content/TeachersLogin.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='/static/content/attendancePage.css') }}">
     <script src="/static/scripts/modernizr-2.6.2.js"></script>
 </head>
 <body>
@@ -32,10 +33,11 @@
                 <p>&copy; {{ year }} - My Flask Application</p>
             </footer>
         </div>
-
+        
+        <script src="/static/scripts/attendancePage.js"></script>
         <script src="/static/scripts/HomePage.js"></script>
         <script src="/static/scripts/jquery-1.10.2.js">
-    <script src="/static/scripts/bootstrap.js"></script>
+    <script src="/static/scripts/bootstrap.js"></scrip>
         <script src="/static/scripts/respond.js"></script>
         {% block scripts %}{% endblock %}
     </body>

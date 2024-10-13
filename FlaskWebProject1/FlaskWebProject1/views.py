@@ -28,6 +28,16 @@ def teachersLogin():
     )
 
 
+@app.route('/attendancePage')
+def attendancePage():
+    """Renders the attendance Page"""
+    return render_template(
+        'attendancePage.html',
+        title='Attendance',
+        year=datetime.now().year,
+        message='Attendance Domain'
+    )
+
 @app.route('/about')
 def about():
     """Renders the about page."""
@@ -36,4 +46,14 @@ def about():
         title='About',
         year=datetime.now().year,
         message='Your application description page.'
+    )
+
+@app.route('/sectionAdding')
+def sectionAdding():
+    """Renders the about page."""
+    return render_template(
+        'sectionAdding.html',
+        title='Section Adding',
+        year=datetime.now().year,
+        message='Add a section.'
     )

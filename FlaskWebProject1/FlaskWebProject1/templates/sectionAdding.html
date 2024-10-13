@@ -8,18 +8,20 @@
         </div>
         <form action="get">
             <div class="input-tab">
-                <label>Teachers ID</label>
+                <label>Section Name: </label>
                 <input type="text">
             </div>
             <div class="input-tab">
-                <label>Password</label>
-                <input type="password">
+                <label>Total Of Student</label>
+                <input type="text">
             </div>
         </form>
 
         <div class="btn">
-            <button type="button" id="login-btn" onclick="window.location.href='{{ 'attendancePage' }}'">Login</button>
+            <button type="button" id="createSectionBtn" data-url="{{ url_for('attendancePage') }}">Add Section</button>
         </div>
+        
     </form>
 </div>
+
 {% endblock %}
