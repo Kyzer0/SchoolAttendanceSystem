@@ -6,7 +6,7 @@
     <title>{{ title }} - My Flask Application</title>
     <link rel="stylesheet" type="text/css" href="/static/content/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/static/content/site.css" />
-    <link rel="stylesheet" type="text/css" href="/static/content/HomePage.css" />
+    <link rel="stylesheet" type="text/css" href="/static/content/index.css" />
     <link rel="stylesheet" type="text/css" href="/static/content/TeachersLogin.css" />
     <link rel="stylesheet" href="{{ url_for('static', filename='/static/content/attendancePage.css') }}">
     <script src="/static/scripts/modernizr-2.6.2.js"></script>
@@ -23,9 +23,6 @@
         <title>Front Page</title>
     </head>
     <body>
-       
-            </div>
-        </div>
         <div class="container body-content">
             {% block content %}{% endblock %}
             <hr />
@@ -36,9 +33,9 @@
         
         <script src="/static/scripts/attendancePage.js"></script>
         <script src="/static/scripts/HomePage.js"></script>
-        <script src="/static/scripts/jquery-1.10.2.js">
-    <script src="/static/scripts/bootstrap.js"></scrip>
-        <script src="/static/scripts/respond.js"></script>
+        <script src="/static/scripts/JSBUNDLE/jquery-1.10.2.js">
+        <script src="/static/scripts/JSBUNDLE/bootstrap.js"></scrip>
+        <script src="/static/scripts/JSBUNDLE/respond.js"></script>
         {% block scripts %}{% endblock %}
     </body>
 </html>
