@@ -1,39 +1,56 @@
 {% extends "layout.html" %}
 
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='/static/content/index.css') }}">
+{% endblock %}
 {% block content %}
 
 <div class="container">
     <div class="wrap-up">
         <div class="header">
-            <div class="seperator"></div>
             <div class="logo">
+                <img src="{{ url_for('static', filename='img/icct logop.png') }}" alt="ICCT Logo">
             </div>
             <div class="authentication">
-                <div class="form">
-                    <i class="fa-solid fa-user"></i>
-                    <button type="button" id="login-btn" onclick="window.location.href='{{ 'teachersLogin' }}'">Login</button>
-
-                </div>
+                <i class='bx bxs-user'></i>
             </div>
         </div>
-        <form>
-            <div class="input-tab">
-                <label>Full Name</label>
-                <input id="student-name" type="text">
-            </div>
+    
+        <div class="title">  
+        </div>
 
+        <form action="{{ url_for('your_form_handler_route') }}" method="POST">
             <div class="input-tab">
-                <label>Student ID</label>
-                <input id="student-id" type="text">
+                <label for="full-name">Full Name:</label>
+                <input id="full-name" type="text" placeholder="Enter your fullname">
             </div>
-
             <div class="input-tab">
-                <label>Section</label>
-                <input id="student-section" type="text">
+                <input id="student-id" type="text" placeholder="Enter your Student Id">
+                <div id="studentid-error" class="error-tab"></div>
             </div>
-            <div class="btn">
-                <button id="clear-btn">Clear All</button>
-                <button>Submit</button>
+            <div class="input-tab">
+               <input id="section" type="text" placeholder="Enter your section">
+               <div id="section-error" class="error-tab"></div>
+            </div>
+            <div class="input-tab">
+                <input id="email" type="text" placeholder="Enter your email">
+                <div id="email-error" class="error-tab"></div>
+            </div>
+            <div class="btn-form">
+                <input id="submit-btn" type="submit" value="Submit">
+                <div id="submit-error" class="error-tab"></div>
             </div>
         </form>
-        {% endblock %}
+
+        <div class="pop-up">
+            <h2>Thank you</h2>
+            <p>Validation success</p>
+            <button class="ok-btn" id="okBtn" type="button">OK</button>
+        </div>
+
+
+    </div>
+
+
+</div>
+{% endblock %}
