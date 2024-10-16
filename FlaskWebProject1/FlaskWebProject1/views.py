@@ -11,7 +11,7 @@ from FlaskWebProject1 import app
 def home():
     """Renders the home page."""
     return render_template(
-        'index.html',
+        'layout.html',
         title='Home Page',
         year=datetime.now().year,
     )

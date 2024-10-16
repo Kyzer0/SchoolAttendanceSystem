@@ -34,14 +34,17 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="FlaskWebProject1\" />
+    <Folder Include="FlaskWebProject1\static\img\" />
     <Folder Include="FlaskWebProject1\static\" />
     <Folder Include="FlaskWebProject1\static\content\" />
     <Folder Include="FlaskWebProject1\static\fonts\" />
     <Folder Include="FlaskWebProject1\static\scripts\" />
+    <Folder Include="FlaskWebProject1\static\scripts\JSBUNDLE\" />
     <Folder Include="FlaskWebProject1\templates\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="FlaskWebProject1\static\content\HomePage.css" />
+    <Content Include="FlaskWebProject1\static\img\icct logop.png" />
+    <Content Include="FlaskWebProject1\static\content\index.css" />
     <Content Include="FlaskWebProject1\static\scripts\HomePage.js" />
     <Content Include="FlaskWebProject1\templates\HomePage.html" />
     <Content Include="FlaskWebProject1\templates\index.html" />
@@ -54,23 +57,22 @@
     <Content Include="FlaskWebProject1\static\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="FlaskWebProject1\static\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="FlaskWebProject1\static\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="FlaskWebProject1\static\scripts\bootstrap.js" />
-    <Content Include="FlaskWebProject1\static\scripts\bootstrap.min.js" />
-    <Content Include="FlaskWebProject1\static\scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="FlaskWebProject1\static\scripts\jquery-1.10.2.js" />
-    <Content Include="FlaskWebProject1\static\scripts\jquery-1.10.2.min.js" />
-    <Content Include="FlaskWebProject1\static\scripts\jquery-1.10.2.min.map" />
-    <Content Include="FlaskWebProject1\static\scripts\jquery.validate-vsdoc.js" />
-    <Content Include="FlaskWebProject1\static\scripts\jquery.validate.js" />
-    <Content Include="FlaskWebProject1\static\scripts\jquery.validate.min.js" />
-    <Content Include="FlaskWebProject1\static\scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="FlaskWebProject1\static\scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="FlaskWebProject1\static\scripts\modernizr-2.6.2.js" />
-    <Content Include="FlaskWebProject1\static\scripts\respond.js" />
-    <Content Include="FlaskWebProject1\static\scripts\respond.min.js" />
-    <Content Include="FlaskWebProject1\static\scripts\_references.js" />
-    <Content Include="FlaskWebProject1\templates\about.html" />
-    <Content Include="FlaskWebProject1\templates\contact.html" />
+    <Content Include="FlaskWebProject1\static\scripts\JSBUNDLE\bootstrap.js" />
+    <Content Include="FlaskWebProject1\static\scripts\JSBUNDLE\bootstrap.min.js" />
+    <Content Include="FlaskWebProject1\static\scripts\JSBUNDLE\jquery-1.10.2.intellisense.js" />
+    <Content Include="FlaskWebProject1\static\scripts\JSBUNDLE\jquery-1.10.2.js" />
+    <Content Include="FlaskWebProject1\static\scripts\JSBUNDLE\jquery-1.10.2.min.js" />
+    <Content Include="FlaskWebProject1\static\scripts\JSBUNDLE\jquery-1.10.2.min.map" />
+    <Content Include="FlaskWebProject1\static\scripts\JSBUNDLE\jquery.validate-vsdoc.js" />
+    <Content Include="FlaskWebProject1\static\scripts\JSBUNDLE\jquery.validate.js" />
+    <Content Include="FlaskWebProject1\static\scripts\JSBUNDLE\jquery.validate.min.js" />
+    <Content Include="FlaskWebProject1\static\scripts\JSBUNDLE\jquery.validate.unobtrusive.js" />
+    <Content Include="FlaskWebProject1\static\scripts\JSBUNDLE\jquery.validate.unobtrusive.min.js" />
+    <Content Include="FlaskWebProject1\static\scripts\JSBUNDLE\modernizr-2.6.2.js" />
+    <Content Include="FlaskWebProject1\static\scripts\JSBUNDLE\respond.js" />
+    <Content Include="FlaskWebProject1\static\scripts\JSBUNDLE\respond.min.js" />
+    <Content Include="FlaskWebProject1\static\scripts\JSBUNDLE\_references.js" />
+    <AdditionalFiles Include="FlaskWebProject1\templates\about.html" />
     <Content Include="FlaskWebProject1\templates\layout.html" />
   </ItemGroup>
   <ItemGroup>
